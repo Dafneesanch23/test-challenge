@@ -7,3 +7,16 @@ const {getUser, getUsers} = require('../users');
 // Verify any data of the resulting object you want
 
 // READ documentation
+
+
+describe ('User id function test', () => {
+    it ('Should get the user its id', () => {
+        const user = getUser(3);
+        expect(user).toEqual({
+            id: 3,
+            username: 'goosemotionless',
+            email: 'dotmeheart@outlook.com',
+            password: '12345abcde'
+        })
+    })
+})

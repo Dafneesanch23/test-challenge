@@ -1,4 +1,4 @@
-const calculator = {
+const calc = {
     sum(a, b) {
         return a + b;
     },
@@ -11,8 +11,8 @@ const calculator = {
     divide(a, b) {
         return a / b;
     },
-    power: (a,b) => a / b,
+    power: (a,b) => a**b,
 }
 
 
-module.exports = calculator;
+module.exports = {calc};
